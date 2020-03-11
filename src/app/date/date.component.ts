@@ -11,8 +11,8 @@ export class DateComponent implements OnInit {
 
   constructor() {
 
-    setInterval( ()=>{
-      let currentDate = new Date();
+    setInterval( () => {
+      let currentDate : Date = new Date();
       this.dateMessage = new Date().toDateString() + ' ' + currentDate.toLocaleTimeString();
     } , 1000);
    }
